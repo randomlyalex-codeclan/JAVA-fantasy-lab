@@ -26,6 +26,5 @@ public class WeaponTest {
     @Test
     public void hasDefenceRating() {
         assertEquals(20, weapon.getDefenceRating());
-        
     }
 }

@@ -11,11 +11,13 @@ public class Caster extends Character {
     private ArrayList<Item> inventory;
     private CasterType archetype;
     private Spell equippedSpell;
+    private Monster monster;
 
     public Caster(String name, CasterType casterType){
         super(name, casterType.getBaseHealth());
         this.archetype = casterType;
         this.equippedSpell = null;
+        this.monster = null;
     }
 
     public CasterType getArchetype(){
@@ -28,6 +30,13 @@ public class Caster extends Character {
 
     public void equipSpell(Spell spell) {
         this.equippedSpell = spell;
+    }
+
+    public void assignMonster(Monster monster){
+        this.monster = monster;
+    }
+    public Monster getMonster(){
+        return this.monster;
     }
 
 

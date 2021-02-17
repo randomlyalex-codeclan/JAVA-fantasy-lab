@@ -49,4 +49,11 @@ public class CasterTest {
         casterCharacter.equipSpell(spell);
         assertEquals(spell, casterCharacter.getEquippedSpell());
     }
+
+    @Test
+    public void canAddMonster(){
+        Monster monster = new Monster("Fido", 300, 20, 60);
+        casterCharacter.assignMonster(monster);
+        assertEquals(monster, casterCharacter.getMonster());
+    }
 }
