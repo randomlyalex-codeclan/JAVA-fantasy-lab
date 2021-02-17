@@ -36,7 +36,5 @@ public abstract class Character implements IAttack, IDefend {
 
     public abstract void attack(Item item, Character character);
     public abstract void defend(Item item, Character character);
-
-
-
+    
 }
