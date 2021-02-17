@@ -1,4 +1,4 @@
-package characters;
+package characters.nonPlayer;
 
 import characters.nonPlayer.Monster;
 import org.junit.Before;

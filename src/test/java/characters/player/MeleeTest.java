@@ -1,4 +1,4 @@
-package characters;
+package characters.player;
 
 import characters.player.Melee;
 import characters.player.types.MeleeType;
@@ -50,8 +50,13 @@ public class MeleeTest {
         meleeCharacter.addToInventory(weapon);
         meleeCharacter.equip(weapon);
         assertEquals(weapon, meleeCharacter.getEquipped());
-
-
-
     }
+
+//    @Test
+//    public void canAttackAnEnemyWithAnEquippedWeapon(){
+//        Weapon weapon = new Weapon("Axe",100,30);
+//        meleeCharacter.addToInventory(weapon);
+//        meleeCharacter.equip(weapon);
+//        assertEquals();
+//    }
 }

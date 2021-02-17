@@ -1,4 +1,4 @@
-package characters;
+package characters.player;
 
 import characters.player.Healer;
 import characters.player.types.HealerType;

@@ -1,4 +1,4 @@
-package characters;
+package characters.player;
 
 import characters.nonPlayer.Monster;
 import characters.player.Caster;
