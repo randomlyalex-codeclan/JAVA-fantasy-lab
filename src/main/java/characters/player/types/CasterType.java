@@ -1,4 +1,4 @@
-package characters.player;
+package characters.player.types;
 
 public enum CasterType {
 

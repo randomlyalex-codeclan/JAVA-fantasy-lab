@@ -1,8 +1,8 @@
 package characters.player;
 
+import characters.player.types.HealerType;
 import items.HealingTool;
 import items.Item;
-import items.Weapon;
 
 import java.util.ArrayList;
 

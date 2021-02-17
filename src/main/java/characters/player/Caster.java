@@ -3,10 +3,9 @@ package characters.player;
 import java.util.ArrayList;
 
 import characters.nonPlayer.Monster;
-import items.HealingTool;
+import characters.player.types.CasterType;
 import items.Item;
 import items.Spell;
-import items.Weapon;
 
 public class Caster extends Player {
 

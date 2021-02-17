@@ -1,7 +1,7 @@
 package characters;
 
 import characters.player.Healer;
-import characters.player.HealerType;
+import characters.player.types.HealerType;
 import items.HealingTool;
 import org.junit.Before;
 import org.junit.Test;

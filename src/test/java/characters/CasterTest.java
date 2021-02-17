@@ -2,7 +2,7 @@ package characters;
 
 import characters.nonPlayer.Monster;
 import characters.player.Caster;
-import characters.player.CasterType;
+import characters.player.types.CasterType;
 import items.Spell;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,7 +1,7 @@
 package characters;
 
 import characters.player.Melee;
-import characters.player.MeleeType;
+import characters.player.types.MeleeType;
 import items.Weapon;
 import org.junit.Before;
 import org.junit.Test;

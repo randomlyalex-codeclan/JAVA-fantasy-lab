@@ -1,5 +1,6 @@
 package characters.player;
 
+import characters.player.types.MeleeType;
 import items.Item;
 import items.Weapon;
 
