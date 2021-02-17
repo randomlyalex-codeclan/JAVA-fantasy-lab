@@ -1,5 +1,7 @@
 package characters.player;
 
+import behaviours.IAttack;
+import behaviours.IDefend;
 import behaviours.IUse;
 import characters.Character;
 import items.Item;
@@ -8,7 +10,7 @@ import items.Weapon;
 
 import java.util.ArrayList;
 
-public abstract class Player extends Character {
+public abstract class Player extends Character implements IUse {
 
 
     private ArrayList<Item> inventory;
@@ -37,6 +39,10 @@ public abstract class Player extends Character {
     public abstract void equip(Item item);
 
     public abstract Item getEquipped();
+
+    public abstract void attack(Item item, Character character);
+    public abstract void defend(Item item, Character character);
+    public abstract void use(Item item, Character character);
 
 
 }

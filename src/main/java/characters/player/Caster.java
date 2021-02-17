@@ -2,6 +2,7 @@ package characters.player;
 
 import java.util.ArrayList;
 
+import characters.Character;
 import characters.nonPlayer.Monster;
 import characters.player.types.CasterType;
 import items.Item;
@@ -37,7 +38,6 @@ public class Caster extends Player {
         return this.equipped;
     }
 
-
     public void assignMonster(Monster monster) {
         this.monster = monster;
     }
@@ -45,5 +45,11 @@ public class Caster extends Player {
     public Monster getMonster() {
         return this.monster;
     }
+
+    public void attack(Item item, Character character){};
+    public void defend(Item item, Character character){};
+    public void use(Item item, Character character){};
+
+
 
 }

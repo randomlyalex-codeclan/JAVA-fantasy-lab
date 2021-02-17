@@ -1,5 +1,6 @@
 package characters.player;
 
+import characters.Character;
 import characters.player.types.HealerType;
 import items.HealingTool;
 import items.Item;
@@ -33,4 +34,8 @@ public class Healer extends Player {
     public Item getEquipped(){
         return this.equipped;
     }
+
+    public void attack(Item item, Character character){};
+    public void defend(Item item, Character character){};
+    public void use(Item item, Character character){};
 }

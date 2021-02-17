@@ -1,6 +1,7 @@
 package characters.nonPlayer.enemies;
 
 import characters.Character;
+import items.Item;
 
 public class Enemy extends Character {
 
@@ -10,6 +11,9 @@ public class Enemy extends Character {
         super(name, startingHealth, startingPowerRating, startingDefenceRating);
         this.expValue = expValue;
     }
+
+    public void attack(Item item, Character character){}
+    public void defend(Item item, Character character){}
 
 
 }
