@@ -10,7 +10,7 @@ import items.Weapon;
 
 import java.util.ArrayList;
 
-public abstract class Player extends Character implements IUse {
+public abstract class Player extends Character {
 
 
     private ArrayList<Item> inventory;

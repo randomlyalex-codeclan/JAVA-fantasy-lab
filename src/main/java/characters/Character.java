@@ -4,7 +4,7 @@ import behaviours.IAttack;
 import behaviours.IDefend;
 import items.Item;
 
-public abstract class Character implements IAttack, IDefend {
+public abstract class Character {
 
     private String name;
     private int currentHealth;
@@ -36,5 +36,5 @@ public abstract class Character implements IAttack, IDefend {
 
     public abstract void attack(Item item, Character character);
     public abstract void defend(Item item, Character character);
-    
+
 }
