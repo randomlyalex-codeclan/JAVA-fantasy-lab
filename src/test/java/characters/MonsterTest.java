@@ -1,5 +1,6 @@
 package characters;
 
+import characters.nonPlayer.Monster;
 import org.junit.Before;
 import org.junit.Test;
 

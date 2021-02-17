@@ -1,5 +1,7 @@
 package characters;
 
+import characters.player.Melee;
+import characters.player.MeleeType;
 import items.Weapon;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,7 +14,7 @@ public class MeleeTest {
 
     @Before
     public void before(){
-        meleeCharacter = new Melee("Fighty McFightface",MeleeType.DWARF);
+        meleeCharacter = new Melee("Fighty McFightface", MeleeType.DWARF);
     }
 
     @Test
@@ -46,8 +48,8 @@ public class MeleeTest {
     public void canEquipWeapon() {
         Weapon weapon = new Weapon("Axe",100,30);
         meleeCharacter.addToInventory(weapon);
-        meleeCharacter.equipWeapon(weapon);
-        assertEquals(weapon, meleeCharacter.getEquippedWeapon());
+        meleeCharacter.equip(weapon);
+        assertEquals(weapon, meleeCharacter.getEquipped());
 
 
 

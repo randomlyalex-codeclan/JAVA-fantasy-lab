@@ -1,7 +1,8 @@
 package characters;
 
+import characters.player.Healer;
+import characters.player.HealerType;
 import items.HealingTool;
-import items.Spell;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,7 +14,7 @@ public class HealerTest {
 
         @Before
         public void before(){
-            healerCharacter = new Healer("Soft hands",HealerType.CLERIC);
+            healerCharacter = new Healer("Soft hands", HealerType.CLERIC);
         }
 
         @Test
@@ -37,11 +38,11 @@ public class HealerTest {
         }
 
         @Test
-        public void equiqSpell(){
+        public void equiqHealingTool(){
             HealingTool healingTool = new HealingTool("Healing Potion 5000", 100);
             healerCharacter.addToInventory(healingTool);
-            healerCharacter.equipHealingTool(healingTool);
-            assertEquals(healingTool, healerCharacter.getEquippedHealingTool());
+            healerCharacter.equip(healingTool);
+            assertEquals(healingTool, healerCharacter.getEquipped());
         }
 
 }

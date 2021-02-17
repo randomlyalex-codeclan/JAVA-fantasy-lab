@@ -1,5 +1,8 @@
 package characters;
 
+import characters.nonPlayer.Monster;
+import characters.player.Caster;
+import characters.player.CasterType;
 import items.Spell;
 import org.junit.Before;
 import org.junit.Test;
@@ -46,8 +49,8 @@ public class CasterTest {
     public void canEquipWeapon() {
         Spell spell = new Spell("Makes Scary Bang & Flash", 20);
         casterCharacter.addToInventory(spell);
-        casterCharacter.equipSpell(spell);
-        assertEquals(spell, casterCharacter.getEquippedSpell());
+        casterCharacter.equip(spell);
+        assertEquals(spell, casterCharacter.getEquipped());
     }
 
     @Test
