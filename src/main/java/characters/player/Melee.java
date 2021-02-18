@@ -32,7 +32,9 @@ public class Melee extends Player {
         return this.equipped;
     }
 
-    public void attack(Item item, Character character){}
+    public void attack(Item item, Character character){
+
+    }
     public void defend(Item item, Character character){}
     public void use(Item item, Character character){}
 }

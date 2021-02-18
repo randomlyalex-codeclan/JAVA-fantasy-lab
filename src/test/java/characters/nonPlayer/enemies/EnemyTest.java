@@ -11,7 +11,7 @@ public class EnemyTest {
 
     @Before
     public void before(){
-        enemy = new Enemy("Orc",10,4,3,)
+        enemy = new Enemy("Orc",10,4,3,1 );
     }
 
     @Test

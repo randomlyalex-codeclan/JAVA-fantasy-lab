@@ -1,5 +1,7 @@
 package characters.player;
 
+import characters.nonPlayer.Monster;
+import characters.nonPlayer.enemies.Enemy;
 import characters.player.Melee;
 import characters.player.types.MeleeType;
 import items.Weapon;
@@ -7,6 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class MeleeTest {
 
@@ -52,11 +55,13 @@ public class MeleeTest {
         assertEquals(weapon, meleeCharacter.getEquipped());
     }
 
-//    @Test
-//    public void canAttackAnEnemyWithAnEquippedWeapon(){
-//        Weapon weapon = new Weapon("Axe",100,30);
-//        meleeCharacter.addToInventory(weapon);
-//        meleeCharacter.equip(weapon);
-//        assertEquals();
-//    }
+    @Test
+    public void canAttackAnEnemyWithAnEquippedWeapon(){
+        Weapon weapon = new Weapon("Axe",100,30);
+        Enemy enemy = new Enemy("Orc",15,5,2,1);
+        meleeCharacter.addToInventory(weapon);
+        meleeCharacter.equip(weapon);
+        meleeCharacter.attack(meleeCharacter.getEquipped(), enemy);
+        assertNotEquals(15,enemy.getCurrentHealth());
+    }
 }

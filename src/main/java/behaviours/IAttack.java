@@ -5,4 +5,5 @@ import items.Item;
 
 public interface IAttack {
     public void attack(Item item, Character character);
+
 }
