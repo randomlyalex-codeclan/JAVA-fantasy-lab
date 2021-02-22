@@ -1,2 +1,3 @@
-public class GameMain {
-}
+public static void GameMain(String[]args){
+
+        }
